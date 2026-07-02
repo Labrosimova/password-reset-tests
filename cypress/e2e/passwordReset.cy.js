@@ -4,7 +4,7 @@ describe('Password Reset Flow', () => {
     cy.visit('/login')
   })
 
-  it('User can open Forgot Password page from login', () => {
+  it('User can open Forgot Password page from login page', () => {
     cy.contains('Forgot Password').click()
     cy.url().should('include', 'forgot')
   })
